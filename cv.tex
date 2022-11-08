@@ -1,0 +1,177 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Thanks : Rishi Shah 's Contribution
+% inspired by his awesome contribution:
+% https://www.overleaf.com/articles/rishi-shahs-resume/vgxvkmxktyxn
+% Author : Allianzcortex
+% contact me : github.com/Allianzcortex
+% email : iamwanghz#gmail.com
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.40in,top=0.3in,right=0.75in,bottom=0.1in]{geometry} % Document margins
+\usepackage{fontawesome}
+\usepackage{times}
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+% \begin{center}
+% {\centerline {\em \textbf {Seeking for a fulltime internship from Sep 2019 - Apr 2010(8 months) } } }
+% \end{center}
+\name{Stepan Kalinin} % Your name 
+\address{\faGithub{ github.com/mrkastep}\quad \faLinkedin{ linkedin.com/in/mrkastep}\quad \faEnvelope{ kalinin.sa@phystech.edu}\quad \faPhone{ +1 (919) 737-4731}}
+\address{\faHome 1910 Entrepreneur Drive \\ Raleigh, NC 27606} % Your secondary addess (optional)
+
+\begin{document}
+% {\centerline {\em \textbf { Targeting a 4-month, full-time internship position from 2012.01-2012.05(delete it if needed) } } }
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf North Carolina State University}\hfill {\em Aug 2021 - May 2026}
+\\{\textit {Department of Computer Science, PhD}} \quad \textbf{GPA:} 4.0/4
+
+{\bf Moscow Institute of Physics and Technology } \hfill {\em Sep 2016 - Jun 2020} 
+\\{ \textit {Department of Innovation and High Technology, Bachelor's Degree  }} \quad \textbf{GPA:} 4.63/5
+\\ \textit{Bachelor's thesis topic:} "Strategies for computational tasks preemption in distributed clusters"
+
+
+
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l l}
+Programming languages: & {\textit{Highly experienced: }}& C++, Python\\
+& {\textit{Medium level: }}& C, Golang\\
+& {\textit{Classroom experience: }}& F\#, Java \\
+Concepts and frameworks: & & MapReduce (Hadoop, YT), Protobuf, gRPC \\
+Other skills: & & Linux, git, svn, bash, Docker
+\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Projects}
+
+{\bf MathMaker} \hfill {\it Feb 2019 - Present}\\
+mathmaker.ru is a platform for storing and organizing mathematical olympiad problems. My responsibilities include:
+\begin{itemize}
+\vspace{-7pt}
+    \item Contributing to core Django application, adding new features
+\vspace{-7pt}
+    \item Developing LaTeX composition and compilation component which is written in Go and features parallel compilation and a REST API
+\end{itemize}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+
+{\bf Google}\\
+\textit{Software Engineering Intern; C++,  Python}\hfill {\em May 2022 - Aug 2022}\\
+Worked as a member of the Jupiter Fabric Scaling team, developing a new algorithm for multi-commodity network flow problem, with the resulting algorithm showing more than 60x decrease in the number of commodities that require routing changes, and the link utilization levels close to optimal.
+
+{\bf Aim Tech} (now \textit{pinely})\\
+\textit{Software Engineer; C++, Python} \hfill {\em Dec 2020 - Jul 2021}\\
+Developed a tool for quick idea-checking, allowing to implement and run simple trading strategies in a matter of hours and automating daily evaluation of these strategies. The tool was developed in Python and C++, and automated using in-house data-processing system as well as Apache Airflow.
+
+{\bf Yandex}\\
+{\textit{Software Engineer (Middle); C++, Python}} \hfill {\em Jul 2019 - Jun 2020}\\
+Worked on the \textbf{YT} project --- MapReduce-based distributed data storage and processing system. 
+\begin{itemize}
+\vspace{-7pt}
+    \item Implemented a mechanism for the user-transparent delivery of dynamic libraries required by user jobs
+\vspace{-7pt}
+    \item Proposed a scheduling algorithm improvement, reducing preemption rate by 8-20\%. That algorithm ended up being my Bachelor's thesis
+\end{itemize}
+
+{\textit{Software Engineer (Middle); C++}}\hfill {\em Oct 2018 - Mar 2019}
+\begin{itemize}
+\vspace{-7pt}
+    \item Implemented the "resume watching" feature for \textbf{Yandex.Ether}
+\vspace{-7pt}
+    \item Constructed a new pipeline for user actions, reducing delivery delay from hours to tens of seconds
+\end{itemize}
+
+{\textit{Software Engineer Intern}; C++}\hfill {\em Mar 2018 - Sep 2018}\\
+Worked at \textbf{Yandex.Video} team, developing and integrating new embedding-based recommendation search index.
+\begin{itemize}
+\vspace{-7pt}
+    \item Implemented an easily configurable embedding calculation pipeline for the index, allowing running arbitrary models on documents and building kNN indexes on the resulting embeddings.
+\end{itemize}
+
+
+\pagebreak
+\end{rSection}
+\begin{rSection}{Teaching experience}
+\textbf{North Carolina State University}\\
+\textit{Teaching Assistant \hfill Aug 2021 - Present}
+\vspace{-7pt}
+\begin{itemize}
+    \item \textit{CSC 230 - C and Software Tools}. My responsibilities include grading coding projects, and conducting office hours to help students with course-related questions.
+\end{itemize}
+
+\textbf{Moscow Institute of Physics and Technology}\\
+\textit{Teaching Assistant \hfill Feb 2019 - Jun 2021}
+\vspace{-7pt}
+\begin{itemize}
+    \item \textit{Formal Languages and Translations, Fall 2020}. Conducted practical lessons focused on basic theory and problem solving. Topics covered include automata theory, context-free grammars and finite-state transducers.
+\vspace{-7pt}
+    \item \textit{Theory and Practice in Concurrent Computing, Spring 2020 \& Spring 2021}. Conducted lessons on concurrency primitives, concurrent programming techniques and applications such as implementations of fibers and coroutines.
+\vspace{-7pt}
+    \item \textit{Theory and Practice in Concurrent Computing, Spring 2019}. Conducted several lessons on concurrency primitives and lock-free data structures and numerous classes where hometasks were discussed with individual students.
+% {\bf Teaching assistant at MIPT } \hfill {\em Feb 2019 - Jun 2019}\\
+% TA at \textit{Theory and Practice in Concurrent Computing} course for 2nd year university students. Conducted several lessons on concurrency primitives and lock-free data structures and numerous classes where hometasks were discussed with individual students.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Awards}
+\textbf{VK Cup}\hfill \textit{Aug 2018}
+\vspace{-7pt}
+\begin{itemize}
+    \item 11th place at VK cup 2018 (among 20 finalist teams): \href{https://codeforces.com/contest/951/standings}{https://codeforces.com/contest/951/standings}
+\end{itemize}
+\textbf{ACM ICPC NEERC}\hfill \textit{Dec 2017}
+\vspace{-7pt}
+\begin{itemize}
+    \item 11th place at ACM ICPC NEERC semi-finals 2017 (among 244 semi-finalist teams):\\ \href{https://neerc.ifmo.ru/archive/2017.html}{https://neerc.ifmo.ru/archive/2017.html}
+\end{itemize}
+
+\textbf{National Olympiad in Informatics}\hfill \textit{Apr 2016}
+\begin{itemize}
+\vspace{-7pt}
+    \item Winner award in National Olympiad in Informatics 2016 (place 15 of 242 in the finals)
+\end{itemize}
+
+\textbf{National Olympiad in Informatics}\hfill \textit{Apr 2016}
+\begin{itemize}
+\vspace{-7pt}
+    \item Prize-winner award in National Olympiad in Informatics 2015 (place 107 of 251 in the finals)
+\end{itemize}
+
+\end{rSection}
+
+\end{document}
